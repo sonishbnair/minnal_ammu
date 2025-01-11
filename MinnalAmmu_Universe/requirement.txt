@@ -1,0 +1,10 @@
+# Core UI and functionality
+streamlit==1.32.2
+langchain-community
+langchain==0.1.12
+
+# LLM integration
+ollama==0.1.7
+
+# Basic utilities
+python-dotenv==1.0.1
