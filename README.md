@@ -21,6 +21,8 @@ The system architecture consists of four main components that work together to b
 
 The components interact in a cyclic flow where the Universe Builder provides initial setup, Universe Integration provides context to Story Generator, and new stories are validated and integrated back into the universe.
 
+![Alt text](MinnalAmmu_Arch.png "High Level Architecture Diagram")
+
 ```mermaid
 graph TD
     subgraph "Universe Builder"
