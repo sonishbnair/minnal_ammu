@@ -1,4 +1,6 @@
-# Minnal Ammu
+# Minnal Ammu - An AI-powered Superhero Story Generator 
+### An AI-powered superhero story generator that brings Minnal Ammu's adventures to life through dynamic narratives and images in a continuously evolving universe.
+
 Minnal Ammu is a superhero character I created a few years ago for bedtime stories with my daughter. In this project, I am building a universe for Minnal Ammu.
 Minnal Ammu is an innovative story generation project that creates dynamic superhero narratives centered around its titular character, Ammu. The project combines advanced language models with image generation capabilities to produce immersive storytelling experiences within a consistent universe.
 
