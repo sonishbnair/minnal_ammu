@@ -1,6 +1,7 @@
 {
     "characters": {
       "Minnal Ammu": {
+        "id": "CHAR2025010100001",
         "powers": [
           "Can fly super fast",
           "Can run super fast",
@@ -21,6 +22,7 @@
         ]
       },
       "Sid": {
+        "id": "CHAR2025010100002",
         "powers": [],
         "description": "Sid is .......",
         "created_date": "2025-01-09T14:30:46.798192",
@@ -33,6 +35,7 @@
         ]
       },
       "Achaa": {
+        "id": "CHAR2025010100003",
         "powers": [
           "love ammu and sid to the moon"
         ],
@@ -45,6 +48,7 @@
       }
     },
     "locations": {
+      "id": "LOC20250101001000",
       "Playground": {
         "description": "A vibrant playground for kids aged 5-12 features a biking track with gentle inclines, multi-height slides, various swings (belt, bucket, tire, platform), and monkey bars with climbing zones like a rock wall and rope pyramid. A free-play area supports games, while themed structures like treehouses and tunnels spark imagination. There are lot of trees around, place for parents to sit.",
         "created_date": "2025-01-09T14:35:01.789193",
@@ -58,6 +62,7 @@
         ]
       },
       "soccer ground": {
+        "id": "LOC20250101002000",
         "description": "A kids' soccer ground is a safe and fun outdoor space designed for young players to enjoy the sport. It features a smaller field size with soft grass or turf, scaled-down goals, and clear boundary lines to suit their age and skill level. The area is often equipped with seating for parents, shaded spots, and basic amenities to ensure a comfortable experience for everyone. It's a vibrant place where kids can learn teamwork, develop skills, and stay active while having fun! Ammu and sid love to play soccer",
         "created_date": "2025-01-10T11:47:42.075194",
         "last_updated": "2025-01-10T11:47:42.075204",
@@ -72,6 +77,7 @@
     "stories": [
       {
         "title": "Ammu's Soccer Showdown",
+        "id": "STORY2025010102200",
         "content": "Story:\n    On a sunny day, Minnal Ammu and her best friend Sid loved to play soccer on their favorite kids' soccer ground. But today was special! Achaa, their teacher, had challenged them to a game.\n\nAmmu flew into the air, landing gracefully near midfield. She kicked the ball so fast it vanished in a flash of light. Sid, quick as lightning, chased after it, dribbling skillfully towards Achaa's goal.\n\nSuddenly, dark clouds gathered overhead. \"No rain today!\" Ammu thought, and she moved the clouds aside, making the sun shine again. But then, just as Sid was about to score, it started raining! Ammu panicked but remembered her other power: stopping rains. She moved the clouds over the soccer ground, ending the downpour.\n\nWith a final sprint, Sid scored, making everyone cheer. They hugged Achaa, who smiled and said, \"Remember, teamwork makes the dream work!\"",
         "moral_lesson": "When we face challenges, we can rely on our friends and use our unique abilities to overcome them. Just like Ammu and Sid worked together to win their soccer game!",
         "metadata": {
