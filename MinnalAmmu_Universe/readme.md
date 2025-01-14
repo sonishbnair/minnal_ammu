@@ -122,17 +122,17 @@ brew services stop ollama
 brew services list
 ```
 
-## Common Issues and Solutions
+## Demo - Minnal Ammu Universe
+Here are some screenshots demonstrating the key features of the system:
 
-1. "Error: could not connect to ollama app, is it running?"
-   - Solution: Run `brew services start ollama`
-   - Verify with `brew services list`
+### Adding Characters
+<img src="images/AddCharacters.png" width="600">
 
-2. "Error: pull model manifest: file does not exist"
-   - Solution: Use `ollama pull mistral` instead of version-specific tags
+### Adding Locations
+<img src="images/AddLocation.png" width="600">
 
-3. Model verification:
-   - Use `ollama list` to check installed models
-   - Should see mistral:latest (approximately 4.1 GB)
+### Viewing Story References
+<img src="images/ViewStoryReference.png" width="600">
 
-
+### Viewing Universe
+<img src="images/ViewUniverse.png" width="600">
