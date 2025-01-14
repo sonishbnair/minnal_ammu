@@ -24,16 +24,14 @@ Key features:
 The builder is specifically tuned for the Minnal Ammu universe, ensuring generated images match the story's themes and character descriptions while maintaining a child-friendly, vibrant art style.
 
 
-# SDXL Turbo Model Setup Guide for Intel Mac
+# SDXL Turbo Model Setup Guide 
 
 This guide provides step-by-step instructions for setting up Stable Diffusion XL Turbo on Intel-based Mac systems.
 
 ## System Requirements
 
-- Intel-based MacBook Pro
 - Minimum 16GB RAM
 - At least 8GB free disk space
-- macOS 10.15 or later
 - Python 3.10 or later
 
 ## Installation Steps
@@ -47,8 +45,14 @@ cd sdxl-project
 
 ### 2. Set Up Python Environment
 ```bash
-# Install Miniconda if not already installed
+# Install Miniconda if not already installed, below command for mac
 brew install --cask miniconda
+
+# Install on Ubintu
+sudo apt-get update
+sudo apt-get install wget
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
 
 # Initialize conda (restart terminal after this)
 conda init zsh  # or 'conda init bash' if using bash
