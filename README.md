@@ -70,6 +70,32 @@ graph TD
     class UD,MD,ST,HI storage
     class UB,SG,UI,NS,LLM,IM process
 ```
+
+## Demo - Minnal Ammu Universe
+Here are some screenshots demonstrating the key features of the system:
+
+### Adding Characters
+<img src="MinnalAmmu_Universe/images/AddCharacters.png" width="700">
+
+### Adding Locations
+<img src="MinnalAmmu_Universe/images/AddLocation.png" width="700">
+
+### Viewing Story References
+<img src="MinnalAmmu_Universe/images/ViewStoryReference.png" width="700">
+
+### Viewing Universe
+<img src="MinnalAmmu_Universe/images/ViewUniverse.png" width="700">
+
+
+## Demo - Minnal Ammu Story Generation
+Here are some screenshots demonstrating the key features of the system:
+
+### Generating a story - select characters from univers, location etc.
+<img src="Generate_Stories/images/GenerateStory.png" width="900">
+
+### A sample Generated story
+<img src="Generate_Stories/images/GeneratedStory.png" width="700">
+
 ## License
 
 MIT License

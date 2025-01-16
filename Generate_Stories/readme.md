@@ -64,29 +64,6 @@ ollama list
 # mistral:latest    [ID]            4.1 GB    [timestamp]
 ```
 
-## Project Structure
-
-```
-MinnalAmmu_Universe/
-├── README.md
-├── requirements.txt
-├── universe/
-│   └── universe_data.json
-├── universe_builder.py
-├── story_generator_app.py
-└── universe_integration.py
-```
-
-## Requirements
-
-Minimal requirements for running the system:
-```
-streamlit==1.32.2
-langchain==0.1.12
-ollama==0.1.7
-python-dotenv==1.0.1
-```
-
 ## Running the Application
 
 1. Ensure Ollama service is running:
@@ -111,28 +88,11 @@ streamlit run universe_builder.py
 streamlit run story_generator_app.py
 ```
 
-## Stopping the Service
+## Demo - Minnal Ammu Story Generation
+Here are some screenshots demonstrating the key features of the system:
 
-When you're done using the application:
-```bash
-# Stop Ollama service
-brew services stop ollama
+### Generating a story - select characters from univers, location etc.
+<img src="images/GenerateStory.png" width="900">
 
-# Verify service is stopped
-brew services list
-```
-
-## Common Issues and Solutions
-
-1. "Error: could not connect to ollama app, is it running?"
-   - Solution: Run `brew services start ollama`
-   - Verify with `brew services list`
-
-2. "Error: pull model manifest: file does not exist"
-   - Solution: Use `ollama pull mistral` instead of version-specific tags
-
-3. Model verification:
-   - Use `ollama list` to check installed models
-   - Should see mistral:latest (approximately 4.1 GB)
-
-
+### A sample Generated story
+<img src="images/GeneratedStory.png" width="700">
