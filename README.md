@@ -19,11 +19,12 @@ The system architecture consists of four main components that work together to b
 
 3. Universe Integration: Acts as a middleware that manages data flow between components, validates new stories, and ensures proper integration with the existing universe.
 
-4. Storage: Handles persistent storage of all universe data including metadata, stories, and historical records.
+4. Story Composer: Creates formatted PDF documents from stories, combining narrative content with generated images while maintaining consistent styling and structure.
 
-The components interact in a cyclic flow where the Universe Builder provides initial setup, Universe Integration provides context to Story Generator, and new stories are validated and integrated back into the universe.
+5. Storage: Handles persistent storage of all universe data including metadata, stories, and historical records.
 
-<!-- ![Alt text](MinnalAmmu_Arch.png "High Level Architecture Diagram") -->
+
+The components interact in a cyclic flow where the Universe Builder provides initial setup, Universe Integration provides context to Story Generator, new stories are validated and integrated back into the universe, and Story Composer creates the final PDF outputs.The components interact in a cyclic flow where the Universe Builder provides initial setup, Universe Integration provides context to Story Generator, and new stories are validated and integrated back into the universe.
 
 ```mermaid
 graph TD
@@ -58,17 +59,26 @@ graph TD
         UD --> |Stores| HI[History]
     end
 
+    subgraph "Story Composer"
+        SC[story_composer.py]
+        SC --> |Reads| UD
+        SC --> |Processes| ST
+        SC --> |Uses| IM
+        SC --> |Creates| PDF[PDF Stories]
+    end
+
     subgraph "Data Flow"
         UB --> |Initial Setup| UI
         UI --> |Universe Context| SG
         SG --> |Story Data| UI
         UI --> |Updates| UB
+        UI --> |Provides Data| SC
     end
 
     classDef storage fill:#f9f,stroke:#333,stroke-width:2px,color:#000
     classDef process fill:#bbf,stroke:#333,stroke-width:2px,color:#000
-    class UD,MD,ST,HI storage
-    class UB,SG,UI,NS,LLM,IM process
+    class UD,MD,ST,HI,PDF storage
+    class UB,SG,UI,NS,LLM,IM,SC process
 ```
 
 ## Demo - Minnal Ammu Universe
